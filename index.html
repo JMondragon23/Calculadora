@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>calculadora</title>
+  </head>
+  <body>
+    <div class="calculadora">
+      <div class="display" id="display">0</div>
+      <button onclick="limpiarCalculadora()">C</button>
+      <button onclick="borrarUltimo()">-</button>
+      <button onclick="agregarDisplay('/')" class="operacion">%</button>
+      <button onclick="agregarDisplay('*')"class="operacion">*</button>
+
+      <button onclick="agregarDisplay('7')">7</button>
+      <button onclick="agregarDisplay('8')">8</button>
+      <button onclick="agregarDisplay('9')">9</button>
+      <button onclick="agregarDisplay('-')" class="operacion">-</button>
+
+      <button onclick="agregarDisplay('4')" >4</button>
+      <button onclick="agregarDisplay('5')" >5</button>
+      <button onclick="agregarDisplay('6')" >6</button>
+      <button onclick="agregarDisplay('+')" class="operacion">+</button>
+
+      <button onclick="agregarDisplay('1')">1</button>
+      <button onclick="agregarDisplay('2')" >2</button>
+      <button onclick="agregarDisplay('3')" >3</button>
+      <button onclick="calcularResultado()" class="operacion">=</button>
+      <button onclick="agregarDisplay('0')" >0</button>
+      <button onclick="agregarDisplay('.')" >.</button>
+    </div>
+
+ 
+    <script src="calculadora.js"></script>
+  </body>
+</html>
